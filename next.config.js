@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withTranspile = require("next-transpile-modules")(["ol", "rlayers"]);
+module.exports = withTranspile({
+  experimental: { esmExternals: "loose", reactStrictMode: true },
+});
 
-module.exports = nextConfig
+// const nextConfig = {
+//   reactStrictMode: true,
+// };
+
+// module.exports = nextConfig;

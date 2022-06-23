@@ -1,6 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## API
+
+Navigate to the api directory and run:
+
+- Create the environment `python3 -m venv venv`
+- Activate the environment `. venv/bin/activate`
+- Install the dependencies `pip install -r requirements.txt`
+- Set the application to load `export FLASK_APP=main`
+- Run the application `flask run`
+
+## Frontend
 
 First, run the development server:
 
